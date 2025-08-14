@@ -51,6 +51,11 @@ select *
 from HumanResources.Employee as he
 where YEAR(he.HireDate) = 2009 
 
+-- exercise 09: return all departments in table HumanResources.Department
+select *
+from HumanResources.Department as hrd
+
+
 
 
 

@@ -62,3 +62,8 @@ from HumanResources.Shift as hrs
 -- exercise 11: return all territories sales, values in columns (Name, Group) in table Sales.SalesTerritory
 select ssa.Name as 'Nome Territorio', ssa.[Group] as 'Grupo' -- observation: Name Group is key word in SQL, for manipulate column with equal name, use [key]
 from Sales.SalesTerritory as ssa
+
+-- exercise 12: return values with contain word "Bike"
+select *
+from Purchasing.Vendor as pv
+where pv.Name LIKE '%Bike%'

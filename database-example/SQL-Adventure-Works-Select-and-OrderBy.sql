@@ -18,3 +18,16 @@ from HumanResources.Employee as he
 -- exercise 3: return all products in table "Production.product"
 select ppro.Name as 'Nome produto', ppro.ProductNumber as 'Número produto'
 from Production.Product as ppro
+
+-- exercise 4: return all products with price bigger value 1000
+select *                   
+from Production.Product as ppro
+where ppro.ListPrice > 1000
+/*
+--- OTHER SOLUTION ---
+
+select ppro.ListPrice as 'Preço do produto' <- LINE MODIFIED
+from Production.Product as ppro
+where ppro.ListPrice > 1000
+
+*/

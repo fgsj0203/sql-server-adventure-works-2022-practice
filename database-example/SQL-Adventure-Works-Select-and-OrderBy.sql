@@ -38,7 +38,22 @@ select *
 from Production.Product as ppro
 where ppro.Color = 'Black'
 
--- exercise 06: 
+-- exercise 06: return values of columns CustomerID and PersonID in table Sales.customer
+select sc.CustomerID as 'ID Cliente', sc.PersonID as 'ID pessoa'
+from Sales.Customer as sc
+
+-- exercise 07: return values of columns AddressLine1, City and PostalCode of table Person.Address
+select pa.AddressLine1 as 'Endereco principal', pa.City as 'Cidade', pa.PostalCode as 'Codigo postal'
+from Person.Address as pa
+
+
+
+
+
+
+
+
+
 
 
 

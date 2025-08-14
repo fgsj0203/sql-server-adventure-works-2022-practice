@@ -46,7 +46,10 @@ from Sales.Customer as sc
 select pa.AddressLine1 as 'Endereco principal', pa.City as 'Cidade', pa.PostalCode as 'Codigo postal'
 from Person.Address as pa
 
-
+-- exercise 08: return all employee if signed contract in year 2009
+select *
+from HumanResources.Employee as he
+where YEAR(he.HireDate) = 2009 
 
 
 

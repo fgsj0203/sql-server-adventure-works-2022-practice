@@ -55,15 +55,6 @@ where YEAR(he.HireDate) = 2009
 select *
 from HumanResources.Department as hrd
 
-
-
-
-
-
-
-
-
-
-
-
-
+-- exercise 10: return values in columns "Name", "StartTime" and "EndTime" in table HumanResources.Shift
+select hrs.Name as 'Nome', hrs.StartTime as 'Inicio', hrs.EndTime as 'Fim'
+from HumanResources.Shift as hrs

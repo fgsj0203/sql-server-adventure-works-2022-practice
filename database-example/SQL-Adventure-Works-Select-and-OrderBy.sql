@@ -72,3 +72,8 @@ where pv.Name LIKE '%Bike%'
 select *
 from Production.Product as pp
 where pp.Weight > 500 order by pp.Weight desc
+
+-- exercise 14: return products with value in column "SellStartDate" in year 2012
+select *
+from Production.Product as pp
+where YEAR (pp.SellStartDate) = 2012

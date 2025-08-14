@@ -77,3 +77,7 @@ where pp.Weight > 500 order by pp.Weight desc
 select *
 from Production.Product as pp
 where YEAR (pp.SellStartDate) = 2012
+
+-- exercise 15: return all methods with column "name" in table Purchasing.ShipMethod
+select ps.Name as 'Nome metodo'
+from Purchasing.ShipMethod as ps

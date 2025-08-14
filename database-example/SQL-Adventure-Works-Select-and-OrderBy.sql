@@ -67,3 +67,8 @@ from Sales.SalesTerritory as ssa
 select *
 from Purchasing.Vendor as pv
 where pv.Name LIKE '%Bike%'
+
+-- exercise 13: return values in products of weight is bigger value 500
+select *
+from Production.Product as pp
+where pp.Weight > 500 order by pp.Weight desc

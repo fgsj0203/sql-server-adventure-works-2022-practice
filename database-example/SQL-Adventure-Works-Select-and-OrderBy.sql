@@ -31,3 +31,16 @@ from Production.Product as ppro
 where ppro.ListPrice > 1000
 
 */
+---------------------------------------------------------------------
+
+-- exercise 05: return all products with color have value "Black"
+select *
+from Production.Product as ppro
+where ppro.Color = 'Black'
+
+-- exercise 06: 
+
+
+
+
+

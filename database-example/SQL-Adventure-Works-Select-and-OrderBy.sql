@@ -58,3 +58,7 @@ from HumanResources.Department as hrd
 -- exercise 10: return values in columns "Name", "StartTime" and "EndTime" in table HumanResources.Shift
 select hrs.Name as 'Nome', hrs.StartTime as 'Inicio', hrs.EndTime as 'Fim'
 from HumanResources.Shift as hrs
+
+-- exercise 11: return all territories sales, values in columns (Name, Group) in table Sales.SalesTerritory
+select ssa.Name as 'Nome Territorio', ssa.[Group] as 'Grupo' -- observation: Name Group is key word in SQL, for manipulate column with equal name, use [key]
+from Sales.SalesTerritory as ssa

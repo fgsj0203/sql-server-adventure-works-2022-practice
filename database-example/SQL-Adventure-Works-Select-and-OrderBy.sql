@@ -105,3 +105,10 @@ where ppoh.Freight > 100
 select *
 from Production.Product as ppro
 where ppro.DaysToManufacture = 0
+
+-- exercise 20: return values in order decrescent based value column "ListPrice" 
+select *
+from Production.Product as ppro
+order by ppro.ListPrice DESC
+
+

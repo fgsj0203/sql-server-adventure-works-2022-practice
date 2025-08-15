@@ -150,4 +150,7 @@ select *
 from Production.Product as pp
 where pp.ProductNumber like 'FR%'
 
---
+-- exercise 29: return products sales in size "L"
+select *
+from Production.Product as pp
+where pp.Size = 'L'

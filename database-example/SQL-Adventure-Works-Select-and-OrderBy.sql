@@ -128,3 +128,10 @@ from Person.Address as pad
 select upper (pp.FirstName ) as 'Primeiro nome (maiusculo)', upper (pp.MiddleName) as 'Nome do meio (maiusculo'
 from Person.Person as pp
 -- Observation: use clausule "upper" for casting values of columns in format upper. use mode: upper [column of table]
+
+-- exercise 25: return data if name product contain word "Mountain"
+select *
+from Production.Product as pp
+where pp.Name like '%Mountain%'
+
+

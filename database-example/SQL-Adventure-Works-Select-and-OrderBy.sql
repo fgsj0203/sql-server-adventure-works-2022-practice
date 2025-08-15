@@ -111,4 +111,7 @@ select *
 from Production.Product as ppro
 order by ppro.ListPrice DESC
 
-
+-- exercise 21: return first 10 registers in order crescent of column "TotalDue"
+select TOP 10 *
+from Purchasing.PurchaseOrderHeader as ppoh
+order by ppoh.TotalDue DESC

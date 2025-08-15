@@ -81,3 +81,8 @@ where YEAR (pp.SellStartDate) = 2012
 -- exercise 15: return all methods with column "name" in table Purchasing.ShipMethod
 select ps.Name as 'Nome metodo'
 from Purchasing.ShipMethod as ps
+
+-- exercise 16: return all types address in table Person.AddressType
+select pa.Name
+from Person.AddressType as pa
+

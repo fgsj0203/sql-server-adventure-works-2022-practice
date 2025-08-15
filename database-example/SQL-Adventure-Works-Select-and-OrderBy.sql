@@ -99,3 +99,8 @@ where ppoh.Freight > 100
 --select *  <- [Line modified for return all datas and columns]
 --from Purchasing.PurchaseOrderHeader as ppoh
 --where ppoh.Freight > 100
+
+-- exercise 19: return products in column DaysToManufacture is equal 0
+select *
+from Production.Product as ppro
+where ppro.DaysToManufacture = 0

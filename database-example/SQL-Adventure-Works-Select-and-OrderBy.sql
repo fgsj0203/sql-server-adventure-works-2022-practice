@@ -123,3 +123,8 @@ from Sales.Currency as sc
 -- exercise 23: return cities distincts in table Person.Address
 select distinct pad.City
 from Person.Address as pad
+
+-- exercise 24: casting names and middlenames in format uppercase
+select upper (pp.FirstName ) as 'Primeiro nome (maiusculo)', upper (pp.MiddleName) as 'Nome do meio (maiusculo'
+from Person.Person as pp
+-- Observation: use clausule "upper" for casting values of columns in format upper. use mode: upper [column of table]

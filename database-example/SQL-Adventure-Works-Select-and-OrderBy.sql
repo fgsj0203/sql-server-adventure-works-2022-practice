@@ -145,7 +145,9 @@ from Production.Product as pp
 where pp.ListPrice between 500 and 1000
 
 
--- exercise 28: return products in column "ProductNumber" started com 'FR'
+-- exercise 28: return products in column "ProductNumber" started with 'FR'
 select *
 from Production.Product as pp
 where pp.ProductNumber like 'FR%'
+
+--

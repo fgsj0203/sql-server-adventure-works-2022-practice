@@ -134,4 +134,8 @@ select *
 from Production.Product as pp
 where pp.Name like '%Mountain%'
 
+-- exercise 26: return 5 most big value in column "ListPrice"
+select top 5 *
+from Production.Product as pp
+order by pp.ListPrice DESC
 

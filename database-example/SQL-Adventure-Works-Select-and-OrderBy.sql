@@ -139,3 +139,7 @@ select top 5 *
 from Production.Product as pp
 order by pp.ListPrice DESC
 
+-- exercise 27: return products in range values 500 and 1000 of column "ListPrice"
+select *
+from Production.Product as pp
+where pp.ListPrice between 500 and 1000

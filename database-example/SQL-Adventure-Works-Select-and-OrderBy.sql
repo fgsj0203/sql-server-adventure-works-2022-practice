@@ -154,3 +154,8 @@ where pp.ProductNumber like 'FR%'
 select *
 from Production.Product as pp
 where pp.Size = 'L'
+
+-- exercise 30: return name products of length is equal the 10 characters
+select *
+from Production.Product as pp
+where len(pp.Name) = 10

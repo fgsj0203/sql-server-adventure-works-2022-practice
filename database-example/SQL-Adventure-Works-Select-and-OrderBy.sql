@@ -100,6 +100,7 @@ where ppoh.Freight > 100
 --from Purchasing.PurchaseOrderHeader as ppoh
 --where ppoh.Freight > 100
 
+
 -- exercise 19: return products in column DaysToManufacture is equal 0
 select *
 from Production.Product as ppro

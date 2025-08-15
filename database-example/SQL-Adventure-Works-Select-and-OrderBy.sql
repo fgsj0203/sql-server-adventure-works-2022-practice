@@ -90,3 +90,12 @@ from Person.AddressType as pa
 select *
 from Person.Person as pp
 where pp.MiddleName LIKE 's%'
+
+-- exercise 18: return data with freight is value bigger 100
+select ppoh.EmployeeID as 'ID venda', ppoh.Freight as 'Valor frete'
+from Purchasing.PurchaseOrderHeader as ppoh
+where ppoh.Freight > 100
+--------- OTHER SOLUTION ---------
+--select *  <- [Line modified for return all datas and columns]
+--from Purchasing.PurchaseOrderHeader as ppoh
+--where ppoh.Freight > 100

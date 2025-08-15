@@ -115,3 +115,7 @@ order by ppro.ListPrice DESC
 select TOP 10 *
 from Purchasing.PurchaseOrderHeader as ppoh
 order by ppoh.TotalDue DESC
+
+-- exercise 22: return all types coins in table Sales.Currency
+select sc.Name as 'Nome moeda', sc.CurrencyCode as 'Codigo moeda'
+from Sales.Currency as sc

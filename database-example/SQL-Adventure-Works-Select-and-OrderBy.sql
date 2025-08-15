@@ -86,3 +86,7 @@ from Purchasing.ShipMethod as ps
 select pa.Name
 from Person.AddressType as pa
 
+-- exercise 17: return employee with middlename start letter "s"
+select *
+from Person.Person as pp
+where pp.MiddleName LIKE 's%'

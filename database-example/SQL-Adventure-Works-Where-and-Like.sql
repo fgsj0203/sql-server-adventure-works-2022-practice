@@ -37,3 +37,8 @@ where pa.City like '%Fort%'
 select *
 from Production.Product as pp
 where pp.StandardCost < 10
+
+-- exercise 07: return all data in orders of month only "december"
+select *
+from Purchasing.PurchaseOrderHeader as ppoh
+where MONTH (ppoh.OrderDate) = 12

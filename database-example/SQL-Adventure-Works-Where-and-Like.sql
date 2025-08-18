@@ -62,3 +62,8 @@ where YEAR (pp.SellEndDate) > 2013
 select *
 from Production.Product as pp
 where pp.Weight is null
+
+-- exercise 12: return coins the name not started a letter 'U'
+select *
+from Sales.Currency sc
+where sc.[Name] not like 'u%'

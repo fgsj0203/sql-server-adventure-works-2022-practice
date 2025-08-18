@@ -11,3 +11,10 @@ Content exercises: WHERE / LIKE
 select *
 from HumanResources.Employee as he
 where he.JobTitle like '%Manager'
+
+-- exercise 02: return products of "SafetyStockLevel" is smaller value 500
+select *
+from Production.Product as pp
+where pp.SafetyStockLevel < 500
+order by pp.SafetyStockLevel desc
+

@@ -22,3 +22,9 @@ order by pp.SafetyStockLevel desc
 select *
 from Production.Product as pp
 where pp.MakeFlag = 1
+
+-- exercise 04: return products with "ReorderPoint" is bigger or equal a value 750
+select *
+from Production.Product as pp
+where pp.ReorderPoint >= 750
+

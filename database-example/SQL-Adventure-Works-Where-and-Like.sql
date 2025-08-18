@@ -72,3 +72,8 @@ where sc.[Name] not like 'u%'
 select *
 from Sales.SalesOrderDetail as ssa
 where ssa.SalesOrderID % 2 = 0
+
+-- exercise 14: return product is smaller price
+select top 1 *
+from Sales.SalesOrderDetail as ssa
+order by ssa.UnitPrice ASC

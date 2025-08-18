@@ -32,3 +32,8 @@ where pp.ReorderPoint >= 750
 select *
 from Person.Address pa
 where pa.City like '%Fort%'
+
+-- exercise 06: return products in table "StandartCost" is value smaller 10
+select *
+from Production.Product as pp
+where pp.StandardCost < 10

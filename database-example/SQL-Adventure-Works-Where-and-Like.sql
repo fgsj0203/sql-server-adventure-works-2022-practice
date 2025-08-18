@@ -53,5 +53,14 @@ select *
 from Purchasing.Vendor as pv
 where pv.AccountNumber like 'AW%'
 
+-- exercise 10: return products of 'SellEndDate' is after year 2013
+select *
+from Production.Product as pp
+where YEAR (pp.SellEndDate) > 2013
+
+
+
+
+
 
 

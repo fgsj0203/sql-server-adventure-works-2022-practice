@@ -67,3 +67,8 @@ where pp.Weight is null
 select *
 from Sales.Currency sc
 where sc.[Name] not like 'u%'
+
+-- exercise 13: return order sales is number pair
+select *
+from Sales.SalesOrderDetail as ssa
+where ssa.SalesOrderID % 2 = 0

@@ -7,9 +7,7 @@ Level exercises: beginner
 Content exercises: WHERE / LIKE
 */
 
-
-
-
-
-
-
+-- exercise 01: return all job title with finished "Manager"
+select *
+from HumanResources.Employee as he
+where he.JobTitle like '%Manager'

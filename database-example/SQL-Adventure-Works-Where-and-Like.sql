@@ -47,3 +47,11 @@ where MONTH (ppoh.OrderDate) = 12
 select *
 from Production.Product as pp
 where pp.WeightUnitMeasureCode is NOT NULL
+
+-- exercise 09: return clients with column "AccountNumber" started with 'AW'
+select *
+from Purchasing.Vendor as pv
+where pv.AccountNumber like 'AW%'
+
+
+

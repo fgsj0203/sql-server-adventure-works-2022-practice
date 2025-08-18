@@ -18,3 +18,7 @@ from Production.Product as pp
 where pp.SafetyStockLevel < 500
 order by pp.SafetyStockLevel desc
 
+-- exercise 03: return products with "MakeFlag" = 1
+select *
+from Production.Product as pp
+where pp.MakeFlag = 1

@@ -58,9 +58,7 @@ select *
 from Production.Product as pp
 where YEAR (pp.SellEndDate) > 2013
 
-
-
-
-
-
-
+-- exercise 11: return products of column 'Weight' is value null
+select *
+from Production.Product as pp
+where pp.Weight is null

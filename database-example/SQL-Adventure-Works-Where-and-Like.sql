@@ -28,3 +28,7 @@ select *
 from Production.Product as pp
 where pp.ReorderPoint >= 750
 
+-- exercise 05: return address in table City if contain word "Fort"
+select *
+from Person.Address pa
+where pa.City like '%Fort%'

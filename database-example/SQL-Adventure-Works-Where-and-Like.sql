@@ -83,3 +83,7 @@ select *
 from Production.Product as pp
 where pp.Color = 'Red' and (pp.ListPrice between 100 and 300)
 
+-- exercise 16: return orders of status in value is 5
+select *
+from Sales.SalesOrderHeader ssa
+where ssa.Status = 5

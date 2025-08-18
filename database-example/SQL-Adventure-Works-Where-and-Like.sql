@@ -77,3 +77,9 @@ where ssa.SalesOrderID % 2 = 0
 select top 1 *
 from Sales.SalesOrderDetail as ssa
 order by ssa.UnitPrice ASC
+
+-- exercise 15: return products with price in range 100 and 300 and color is 'Red'
+select *
+from Production.Product as pp
+where pp.Color = 'Red' and (pp.ListPrice between 100 and 300)
+

@@ -42,3 +42,8 @@ where pp.StandardCost < 10
 select *
 from Purchasing.PurchaseOrderHeader as ppoh
 where MONTH (ppoh.OrderDate) = 12
+
+-- exercise 08: return products of sales in weight not null
+select *
+from Production.Product as pp
+where pp.WeightUnitMeasureCode is NOT NULL
